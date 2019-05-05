@@ -70,19 +70,6 @@ hr {
 }
 
 
-/* not sure what this is, a test maybe? */
-#cana {
-    font-family: "GT Pressura Mono", "Roboto Mono", monospace;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: normal;
-    line-height: 28px;
-    text-transform: none;
-    color: #373F3D;
-}
-
-
 /* MAP STUFF */
 #map {
     width: 100%; 

@@ -10,8 +10,8 @@ var br = $("<br>");
 function addMapBtn(park, targetDiv, parkName) {
     var button = $("<button>");
     // Initializes latitude and longitude variables for the jQuery construction        
-    var parkLat = ""
-    var parkLong = ""
+    var parkLat = "";
+    var parkLong = "";
     // Checks the API response to ensure that the data received is structured as expected.
     if (park.latLong) {
         // Variable that is an array with the latitude and longitude, reassigns previous variables to equal the API information                        
@@ -56,7 +56,7 @@ var displayParks = function(ST) {
     var stateCode = ST
     // new apikey as of 9/25/18 (old one was causing errors)
     var apiKey = "AHxYpzNIdier9Velo2UerDKo7wSmswmujiAOecJt"
-    var queryURL = "https://api.nps.gov/api/v1/parks?stateCode=" +stateCode + "&fields=images" + "&api_key=" + apiKey
+    var queryURL = "https://api.nps.gov/api/v1/parks?stateCode=" + stateCode + "&fields=images" + "&api_key=" + apiKey
     // AJAX request to get info from NPS API
     $.ajax({
         url: queryURL,
@@ -69,8 +69,8 @@ var displayParks = function(ST) {
     })
 }
 
-// GET WEATHER DATA FROM OpenWeatherMaps API
 
+// GET WEATHER DATA FROM OpenWeatherMaps API
 function getWeather(lat, lon, targetDiv) {
     var weatherKey = "3030d802c0a765839ca208f55d3af7b0";
 
@@ -168,10 +168,10 @@ var loadMap = function(lat, long, name) {
             position: "right",
             type: "marker",
             icon: {
-            primaryColor: "#333333",
-            secondaryColor: "#333333",
-            size: "sm"
-        }
+                primaryColor: "#333333",
+                secondaryColor: "#333333",
+                size: "sm"
+            }
         }).addTo(map)
     }
 }
@@ -201,4 +201,4 @@ $("#submitBtn").on("click", function(event) {
 
 
 // On initial load, center the map Cleveland's lat and long
-    loadMap(41.26093905,-81.57116722)
+loadMap(41.26093905,-81.57116722)
