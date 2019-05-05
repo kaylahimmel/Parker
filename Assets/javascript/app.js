@@ -142,7 +142,6 @@ function createTable() {
         $(newRow).attr("data-target","#"+ parkCode) 
         // Add park description to the collapsible targetDiv element
         $(targetDiv).append("<div id='park-description'><h5>Description: </h5><p>" + parkDescription + "</p></div>")
-        
         // Add 'Get Directions' button to the same targetDiv and have it open the directions in a new tab
         $(newBtn).append("<a href='" + parkDirectionsURL + "' target='_blank' class='directions'>Get Directions</a>")
         $(targetDiv).append(newBtn)
@@ -176,6 +175,7 @@ var loadMap = function(lat, long, name) {
     }
 }
 
+
 // When the user clicks the submit button,
 $("#submitBtn").on("click", function(event) {
     var y = $("#stateSelection option:selected").val();
@@ -197,7 +197,7 @@ $("#submitBtn").on("click", function(event) {
     $("#location-query").html(z)
     // load the new map centering on the values of stateLat and stateLong
     loadMap(stateLat, stateLong)
-    })
+})
 
 
 // On initial load, center the map Cleveland's lat and long
