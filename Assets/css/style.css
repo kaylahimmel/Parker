@@ -12,14 +12,24 @@
 
 h1 {
     font-family: "Louize Display", Garamond, serif;
-    font-size: 60px;
+    font-size: 72px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: normal;
     line-height: 60px;
     text-transform: none;
     color: #373F3D;
     }
+
+h2 {
+    font-family: 'Arvo', serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 200;
+    letter-spacing: normal;
+    text-transform: none;
+    color: black;
+}
 
 h5 {
     font-family: "Louize Display", Garamond, serif;
