@@ -1,4 +1,4 @@
-var states = [
+var statesArray = [
     {
        "value": "",
        "text": "None Selected"
